@@ -1,4 +1,4 @@
-package pt.ipb.railroad;
+package main.java.pt.ipb.railroad;
 
 public class Train {
 

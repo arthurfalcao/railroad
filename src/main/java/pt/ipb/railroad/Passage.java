@@ -1,4 +1,4 @@
-package pt.ipb.railroad;
+package main.java.pt.ipb.railroad;
 
 import java.util.Date;
 
