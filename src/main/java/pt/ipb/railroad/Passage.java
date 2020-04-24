@@ -13,6 +13,7 @@ public class Passage {
 
     public Passage(int id, boolean withStop, int line, Station station, Train train) {
         this.id = id;
+        this.datetime = new Date();
         this.withStop = withStop;
         this.line = line;
         this.station = station;
@@ -29,11 +30,11 @@ public class Passage {
 
     @Override
     public String toString() {
-        return "Ticket{" +
+        return "Passage{" +
                 "id=" + id +
                 ", datetime=" + datetime +
-                ", hasStop=" + withStop +
-                ", line='" + line + '\'' +
+                ", withStop=" + withStop +
+                ", line=" + line +
                 ", station=" + station +
                 ", train=" + train +
                 '}';
