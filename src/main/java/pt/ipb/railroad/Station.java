@@ -48,6 +48,6 @@ public class Station {
 
     //TODO
     public String passagesToString() {
-        return "passages";
+        return passages.toString();
     }
 }

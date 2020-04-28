@@ -36,7 +36,8 @@ public class Train {
         return stations.offer(station);
     }
 
-    public String stopsToString() {
-        return "stops";
+    public String ToString() {
+        return getAcronym();
     }
+
 }

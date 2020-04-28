@@ -54,11 +54,14 @@ public class RailwayNetwork {
 
     //TODO
     public String crossesStationToString(String acronym) {
-        return "acronym";
+        Station s= stations.get(acronym);
+        if(s == null) return false;
+        else return p.
+        return ;
     }
 
-    //TODO
+
     public String stopTrainToString(String acronym) {
-        return "acronym";
+        return trains.values().toString();
     }
 }

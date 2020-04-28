@@ -1,5 +1,6 @@
 package main.java.pt.ipb.railroad;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Passage {
@@ -30,13 +31,8 @@ public class Passage {
 
     @Override
     public String toString() {
-        return "Passage{" +
-                "id=" + id +
-                ", datetime=" + datetime +
-                ", withStop=" + withStop +
-                ", line=" + line +
-                ", station=" + station +
-                ", train=" + train +
-                '}';
+        String dhFormated = (new SimpleDateFormat(" 'no dia' dd/MM/yyyy 'às' kk:mm:ss")).format(datetime);
+        return "Train " + train.getAcronym() + " passed by the railway" + station.getLocation() + dhFormated;
     }
+
 }
