@@ -46,8 +46,17 @@ public class Station {
         return passages.add(passage);
     }
 
-    //TODO
     public String passagesToString() {
         return passages.toString();
+    }
+
+    @Override
+    public String toString() {
+        return "Station{" +
+                "acronym='" + acronym + '\'' +
+                ", local='" + local + '\'' +
+                ", passages=" + passages +
+                ", connections=" + connections +
+                '}';
     }
 }

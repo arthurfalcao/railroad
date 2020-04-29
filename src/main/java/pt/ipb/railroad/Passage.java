@@ -31,8 +31,14 @@ public class Passage {
 
     @Override
     public String toString() {
-        String dhFormated = (new SimpleDateFormat(" 'no dia' dd/MM/yyyy 'às' kk:mm:ss")).format(datetime);
-        return "Train " + train.getAcronym() + " passed by the railway" + station.getLocation() + dhFormated;
+        String hasStop;
+        if (hasStop())
+            hasStop = "stop";
+        else
+            hasStop = "do not stop";
+
+        String formattedDate = (new SimpleDateFormat(" 'no dia' dd/MM/yyyy 'às' kk:mm:ss")).format(datetime);
+        return "Train " + train.getAcronym() + " of line " + line + " passed by the station " + getStation().getLocation() + " and " + hasStop + formattedDate;
     }
 
 }

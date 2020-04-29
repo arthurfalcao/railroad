@@ -52,16 +52,21 @@ public class RailwayNetwork {
         return train.passByStation(station, line, stop);
     }
 
-    //TODO
     public String crossesStationToString(String acronym) {
-        Station s= stations.get(acronym);
-        if(s == null) return false;
-        else return p.
-        return ;
+        Station station = stations.get(acronym);
+
+        if (station == null)
+            return null;
+
+        return station.passagesToString();
     }
 
-
     public String stopTrainToString(String acronym) {
-        return trains.values().toString();
+        Train train = trains.get(acronym);
+
+        if (train == null)
+            return null;
+
+        return train.lastStation().toString();
     }
 }

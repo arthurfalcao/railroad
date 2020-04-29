@@ -21,6 +21,10 @@ public class RailroadApplication {
         railwayNetwork.crossTrainByStation("FL", "MA", 2, false);
         railwayNetwork.crossTrainByStation("FL", "LV", 3, true);
 
+        System.out.println("Crosses station:");
+        System.out.println(railwayNetwork.crossesStationToString("LV").replace(",", "\n"));
 
+        System.out.println("Stops train:");
+        System.out.println(railwayNetwork.stopTrainToString("AF"));
     }
 }
